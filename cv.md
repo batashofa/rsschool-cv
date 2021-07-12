@@ -13,7 +13,7 @@
    * Gulp
    * Bootstrap
    * React
-   * ООП
+   * Object Oriented programming (OOP)
 5. You can look at code examples on github (https://github.com/batashofa)  or Сodewars (https://www.codewars.com/users/batashofa).   
    An example of solving "the Calculate Variance" problem on Сodewars:
 ```

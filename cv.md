@@ -28,4 +28,16 @@
    })
    return sum1;    
    } 
-```
+```  
+6. I decided to take courses in web-development in SkillUp.   
+   During the courses, I created projects:
+   1. Grid template with Responsive Web Design (https://github.com/batashofa/grid-template);
+   2. Bootstrap project Kinozal template with Responsive Web Design (https://github.com/batashofa/kinozal-template-init-project);
+   3. Bootstrap project (https://github.com/batashofa/lesson_12);
+   4. JavaScript Slider (https://github.com/batashofa/JS-native-slider);
+      Also I wrote an application in react:
+   1. GitHub test (https://github.com/batashofa/github-user-test)
+
+7. I graduated from the Belarusian National Technical University in 2018. I studied to be a bridge, tunnel and subway engineer.I graduated from web development courses at SkillUp in 2021.
+8. English at the Pre-Intermediate level.  
+   At the moment I am taking courses to improve my 

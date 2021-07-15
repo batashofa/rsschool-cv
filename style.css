@@ -276,7 +276,6 @@ a {
         display: grid;
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 0.7fr 1fr 0.7fr;
-        grid-column-gap: 10px;
         grid-template-areas:
             "avatar contacts skills"
             "avatar english skills";
@@ -312,10 +311,61 @@ a {
     .left {
         grid-template-rows: 0.5fr 0.3fr 1fr;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
         grid-template-areas:
         "avatar contacts "
         "avatar english "
         "avatar skills ";
+    }
+}
+
+
+@media (max-width: 565px) {
+    .header {
+        grid-area: header;
+        background-color: #ececec;
+        min-width: 275px;
+        text-align: center;
+        border: 2px solid #f9b646a8;
+    }
+
+    .header h1,
+    .header h3 {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .main {
+        grid-template-rows: 230px 1fr 0.5fr 70px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "left"
+            "right"
+            "footer";
+    }
+    .right {
+        min-width: 275px;
+    }
+    .left {
+        max-width: 100%;
+        grid-template-rows: 0.7fr 0.5fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "avatar "
+            "contacts "
+            "skills"
+            "english";
+    }
+}
+
+
+@media (width: 320px) {
+
+    .right {
+        width: 280px;
+    }
+
+    .right__slider-title {
+        margin: 0 10px;
     }
 }

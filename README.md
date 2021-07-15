@@ -1,1 +1,1 @@
-https://batashofa.github.io/rsschool-cv/cv
+https://batashofa.github.io/rsschool-cv/

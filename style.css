@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     margin: 0;
@@ -318,6 +322,27 @@ a:hover {
     color: #6282d23b;
 }
 
+.button__top {
+    width: 100px;
+    height: 25px;
+    border: 2px dotted #6282d25c;
+    border-radius: 50%;
+    background-color: #6282d203;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: center;
+    font-family: "Roboto Slab";
+    font-weight: bold;
+    transition: background-color 1s;
+}
+
+.button__top:hover {
+    cursor: pointer;
+    border: 2px dotted #6282d25c;
+    background-color: #6282d21a;
+}
+
 
 @media (max-width: 1120px) {
     .main {
@@ -410,35 +435,11 @@ a:hover {
     }
 }
 
-@media (max-width: 991px) {
-    .main {
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "header"
-            "left"
-            "right"
-            "footer";
-    }
-
-    .left {
-        width: 100%;
-        display: grid;
-        grid-template-rows: 1fr 0.5fr;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-            "avatar skills"
-            "english contacts";
-    }
-}
-
-@media (max-width: 750px) {
+@media (max-width: 890px) {
     .header {
         grid-area: header;
-        background-color: #ececec;
         min-width: 275px;
         text-align: center;
-        border: 2px solid #f9b646a8;
     }
 
     .header h1,
@@ -448,7 +449,6 @@ a:hover {
     }
 
     .main {
-        grid-template-rows: 230px 1fr 0.5fr 70px;
         grid-template-columns: 1fr;
         grid-template-areas:
             "header"
@@ -471,17 +471,24 @@ a:hover {
             "skills"
             "english";
     }
+
     .left__avatar img {
         margin: 30px auto;
     }
+
     .certificate img {
         width: 480px;
+    }
+    .nav__list {
+        display: block;
     }
 }
 
 
 @media (width: 320px) {
-
+    .header h1, .header h3 {
+        padding-right: 20px;
+    }
     .right {
         width: 280px;
     }
@@ -489,13 +496,25 @@ a:hover {
     .right__slider-title {
         margin: 0 10px;
     }
+    .certificate{
+        width: 70%;
+    }
     .certificate img {
         width: 250px;
     }
-    .right-project a{
+
+    .right-project a {
         flex-direction: column;
     }
+
     .right-project__img {
         width: 200px;
+    }
+    .left {
+        grid-template-rows: 540px 230px 490px 255px;
+        width: 280px;
+    }
+    .left__skills-container {
+        width: 240px;
     }
 }

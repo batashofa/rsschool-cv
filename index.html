@@ -11,7 +11,7 @@
 </head>
 <body>
 <main class="main">
-    <header class="header">
+    <header class="header" id="header">
         <nav class="nav">
             <ul class="nav__list">
                 <li>
@@ -30,6 +30,7 @@
                     <a class="header__nav-link" href="#RSS"> The Rolling Scopes & My GitHub</a>
                 </li>
             </ul>
+
         </nav>
         <h1>Hello! My name is Nastassia Batashova</h1>
         <h3>I am junior Front-end Developer</h3>
@@ -136,9 +137,9 @@
             </p>
             <p class="right-p">I graduated from web development courses at SkillUp in 2021.</p>
             <p class="right-p">Also I graduated the courses at The Rolling Scopes in 2021.</p>
-            <div class="certificate">
+            <figure class="certificate">
                 <img src="img/certificate.png" alt="certificate">
-            </div>
+            </figure>
         </div>
         <div>
             <h3 id="my-projects" class="right-h3">My projects</h3>
@@ -159,12 +160,12 @@
                         project Kinozal
                         template with
                         Responsive Web Design
-                    <img class="right-project__img" src="img/project2.png" alt="Bootstrap project Kinozal">
+                        <img class="right-project__img" src="img/project2.png" alt="Bootstrap project Kinozal">
                     </a>
                 </li>
                 <li class="right-project">
                     <a href="https://batashofa.github.io/lesson_12/" target="_blank"> Bootstrap project
-                    <img class="right-project__img" src="img/project3.png" alt="Bootstrap project">
+                        <img class="right-project__img" src="img/project3.png" alt="Bootstrap project">
                     </a>
                 </li>
                 <li class="right-project">
@@ -176,13 +177,23 @@
             <h4>During the courses at The Rolling Scopes, I created projects:</h4>
             <ol>
                 <li class="right-project">
-                    <a href="https://rolling-scopes-school.github.io/batashofa-JSFEPRESCHOOL/museum/" target="_blank"> Museum
+                    <a href="https://rolling-scopes-school.github.io/batashofa-JSFEPRESCHOOL/museum/" target="_blank">
+                        Museum
                         <img class="right-project__img" src="img/project5.png" alt="Museum">
                     </a>
                 </li>
                 <li class="right-project">
-                    <a href="https://rolling-scopes-school.github.io/batashofa-JSFEPRESCHOOL/vertical-slider/" target="_blank"> Vertical Slider
+                    <a href="https://rolling-scopes-school.github.io/batashofa-JSFEPRESCHOOL/vertical-slider/"
+                       target="_blank"> Vertical Slider
                         <img class="right-project__img" src="img/project6.png" alt="Vertical Slider">
+                    </a>
+                </li>
+            </ol>
+            <h4>I also created an application using react:</h4>
+            <ol>
+                <li class="right-project">
+                    <a href="https://github-user-test.vercel.app/" target="_blank"> Simulated GitHub Application
+                        <img class="right-project__img" src="img/project7.png" alt="Simulated GitHub Application">
                     </a>
                 </li>
             </ol>
@@ -205,24 +216,24 @@
                 <a class="right__slider-title" href="#slider5">Handshake problem</a>
             </div>
             <div class="right__slider-pictures">
-                <div class="right__slider-img" id="slider1">
+                <figure class="right__slider-img" id="slider1">
                     <img class="slider-img" src="img/calculate-variance.png" alt="Calculate Variance">
-                </div>
-                <div class="right__slider-img" id="slider2">
+                </figure>
+                <figure class="right__slider-img" id="slider2">
                     <img class="slider-img" src="img/multiples.png" alt="Multiples of 3 or 5">
-                </div>
-                <div class="right__slider-img" id="slider3">
+                </figure>
+                <figure class="right__slider-img" id="slider3">
                     <img class="slider-img" src="img/detect-pagram.png" alt="Detect Pangram">
-                </div>
-                <div class="right__slider-img" id="slider4">
+                </figure>
+                <figure class="right__slider-img" id="slider4">
                     <img class="slider-img" src="img/array-deep-count.png" alt="Array Deep Count">
-                </div>
-                <div class="right__slider-img" id="slider5">
+                </figure>
+                <figure class="right__slider-img" id="slider5">
                     <img class="slider-img" src="img/handshake-problem.png" alt="Handshake problem">
-                </div>
-                <div class="right__slider-img" id="slider6">
+                </figure>
+                <figure class="right__slider-img" id="slider6">
                     <img class="slider-img" src="img/element-equals-its-index.png" alt="Element equals its index">
-                </div>
+                </figure>
             </div>
         </div>
     </section>
@@ -237,6 +248,11 @@
             </div>
         </div>
     </footer>
+    <div class="button__top">
+        <a class="button__top" href="#header">
+        </a>TOP
+
+    </div>
 </main>
 </body>
 </html>

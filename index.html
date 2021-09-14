@@ -10,28 +10,38 @@
           rel="stylesheet">
 </head>
 <body>
-<main class="main">
-    <header class="header" id="header">
-        <nav class="nav">
-            <ul class="nav__list">
+<main class="main" id="main">
+    <header class="header">
+        <div class="header-menu">
+            <nav class="header-navbar">
+                <div class="header-navbar__btn">
+                    <span class="header-navbar__btn-row"></span>
+                    <span class="header-navbar__btn-row"></span>
+                    <span class="header-navbar__btn-row"></span>
+                    <span class="header-navbar__btn-row"></span>
+                    <span class="header-navbar__btn-row"></span>
+                    <span class="header-navbar__btn-row"></span>
+                </div>
+            </nav>
+            <ul class="header-navbar__list">
                 <li>
-                    <a class="header__nav-link" href="#about-me">About me</a>
+                    <a class="header-navbar__link" href="#about-me">About me</a>
                 </li>
                 <li>
-                    <a class="header__nav-link" href="#education">Education</a>
+                    <a class="header-navbar__link" href="#education">Education</a>
                 </li>
                 <li>
-                    <a class="header__nav-link" href="#my-projects">My projects</a>
+                    <a class="header-navbar__link" href="#my-projects">My projects</a>
                 </li>
                 <li>
-                    <a class="header__nav-link" href="#example-my-code">Example my code</a>
+                    <a class="header-navbar__link" href="#example-my-code">Example my code</a>
                 </li>
                 <li>
-                    <a class="header__nav-link" href="#RSS"> The Rolling Scopes & My GitHub</a>
+                    <a class="header-navbar__link" href="#RSS"> The Rolling Scopes & My GitHub</a>
                 </li>
             </ul>
 
-        </nav>
+        </div>
         <h1>Hello! My name is Nastassia Batashova</h1>
         <h3>I am junior Front-end Developer</h3>
     </header>
@@ -249,10 +259,12 @@
         </div>
     </footer>
     <div class="button__top">
-        <a class="button__top" href="#header">
+        <a class="button__top" href="#main">
         </a>TOP
 
     </div>
 </main>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

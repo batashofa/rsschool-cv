@@ -5,19 +5,27 @@ $(document).ready(function(){
     });
 });
 
-const slides = document.querySelectorAll('.right-project__container-slide');
-for (const slide of slides) {
-    slide.addEventListener('click', () => {
-        clearActiveClasses()
-        slide.classList.add('active');
-    })
+
+function slidesPlagin(activeSlide = 3) {
+    const slides = document.querySelectorAll('.right-project__container-slide');
+
+    slides[activeSlide].classList.add('active')
+
+    for (const slide of slides) {
+        slide.addEventListener('click', () => {
+            clearActiveClasses()
+            slide.classList.add('active');
+        })
+    }
+
+    function clearActiveClasses() {
+        slides.forEach((slide) => {
+            slide.classList.remove('active');
+        })
+    }
 }
 
-function clearActiveClasses() {
-    slides.forEach((slide) => {
-        slide.classList.remove('active');
-    })
-}
+slidesPlagin();
 
 console.log("Самооценка: 150/150");
 console.log("1.Вёрстка валидная +10");

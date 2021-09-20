@@ -29,16 +29,22 @@
                     <a class="header-navbar__link" href="#about-me">About me</a>
                 </li>
                 <li>
+                    <a class="header-navbar__link" href="#languages">Languages</a>
+                </li>
+                <li>
                     <a class="header-navbar__link" href="#education">Education</a>
                 </li>
                 <li>
                     <a class="header-navbar__link" href="#my-projects">My projects</a>
                 </li>
                 <li>
+                    <a class="header-navbar__link" href="#my-video">My video CV</a>
+                </li>
+                <li>
                     <a class="header-navbar__link" href="#example-my-code">Example my code</a>
                 </li>
                 <li>
-                    <a class="header-navbar__link" href="#RSS"> The Rolling Scopes & My GitHub</a>
+                    <a class="header-navbar__link" href="#RSS">My GitHub</a>
                 </li>
             </ul>
         </div>
@@ -163,23 +169,38 @@
             <div class="right-project">
                 <div class="right-project__container">
                     <div class="right-project__container-slide" style="background-image: url('img/project2.png');">
-                        <a class="right-project__container-link" href="https://batashofa.github.io/kinozal-template-init-project/" target="_blank">Bootstrap project Kinozal</a>
+                        <a class="right-project__container-link"
+                           href="https://batashofa.github.io/kinozal-template-init-project/" target="_blank">Bootstrap
+                            project Kinozal</a>
                     </div>
                     <div class="right-project__container-slide" style="background-image: url('img/project4.png');">
-                        <a class="right-project__container-link" href="https://batashofa.github.io/JS-native-slider/" target="_blank">JavaScript Slider</a>
+                        <a class="right-project__container-link" href="https://batashofa.github.io/JS-native-slider/"
+                           target="_blank">JavaScript Slider</a>
                     </div>
                     <div class="right-project__container-slide" style="background-image: url('img/project7.png');">
-                        <a class="right-project__container-link" href="https://github-user-test.vercel.app/" target="_blank">Simulated GitHub Application</a>
+                        <a class="right-project__container-link" href="https://github-user-test.vercel.app/"
+                           target="_blank">Simulated GitHub Application</a>
                     </div>
-                    <div class="right-project__container-slide active" style="background-image: url('img/project1.png');">
-                        <a class="right-project__container-link" href="https://batashofa.github.io/grid-template/" target="_blank">Grid template with Responsive Web Design</a>
+                    <div class="right-project__container-slide" style="background-image: url('img/project1.png');">
+                        <a class="right-project__container-link" href="https://batashofa.github.io/grid-template/"
+                           target="_blank">Grid template with Responsive Web Design</a>
                     </div>
                     <div class="right-project__container-slide" style="background-image: url('img/project5.png');">
-                        <a class="right-project__container-link" href="https://rolling-scopes-school.github.io/batashofa-JSFEPRESCHOOL/vertical-slider/" target="_blank">Vertical Slider</a>
+                        <a class="right-project__container-link"
+                           href="https://rolling-scopes-school.github.io/batashofa-JSFEPRESCHOOL/vertical-slider/"
+                           target="_blank">Vertical Slider</a>
                     </div>
                 </div>
 
             </div>
+        </div>
+        <div id="my-video">
+            <h3 class="right-h3">My video CV</h3>
+            <p class="right-p right-p__one"></p>
+            <iframe class="bottom-video" width="650" height="400" src="https://www.youtube.com/embed/x2bQIX5y6Ps"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
         </div>
         <div class="solution">
             <h3 id="example-my-code" class="right-h3">Example my code</h3>
@@ -272,7 +293,6 @@
             this.right = right;
           }
         }
-
         const isBST = node => {
             const arr = [];
             inOrder(node, arr);
@@ -325,12 +345,11 @@
         }
             </code>
         </pre>
-            </pre>
             <pre class="right__slider-img" id="slider7">
             <code>
         function getParticipants(handshakes) {
            let i = 1;
-            if (handshakes <= 0) {
+            if (handshakes &lt;= 0) {
                 return 1;
             }
             while (handshakes > 0) {
@@ -356,7 +375,6 @@
     <div class="button__top">
         <a class="button__top" href="#main">
         </a>TOP
-
     </div>
 </main>
 <script src="libs/jquery/dist/jquery.min.js"></script>

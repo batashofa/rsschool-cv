@@ -164,7 +164,6 @@ a:hover {
     top: 14.5px;
 }
 
-
 .right {
     grid-area: right;
     width: 100%;
@@ -442,7 +441,11 @@ a:hover {
 .footer__name a:hover {
     color: #6282d23b;
 }
-
+.bottom-video {
+    display: flex;
+    margin: auto;
+    border: none;
+}
 .button__top {
     width: 100px;
     height: 25px;
@@ -625,6 +628,10 @@ a:hover {
     .header-navbar__list {
         display: none;
     }
+    .bottom-video {
+        width: 500px;
+        height: 350px;
+    }
 }
 
 @media (max-width: 680px) {
@@ -668,6 +675,10 @@ a:hover {
         bottom: 10px;
         left: 10px;
     }
+    .bottom-video {
+        width: 500px;
+        height: 300px;
+    }
 }
 
 @media (max-width: 550px) {
@@ -695,6 +706,10 @@ a:hover {
     }
     .bottom div {
         margin-bottom: 10px;
+    }
+    .bottom-video {
+        width: 280px;
+        height: 200px;
     }
 }
 
@@ -745,5 +760,4 @@ a:hover {
     .left__skills-container {
         width: 240px;
     }
-
 }

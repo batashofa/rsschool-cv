@@ -5,9 +5,31 @@ $(document).ready(function(){
     });
 });
 
+
+function slidesPlagin(activeSlide = 3) {
+    const slides = document.querySelectorAll('.right-project__container-slide');
+
+    slides[activeSlide].classList.add('active')
+
+    for (const slide of slides) {
+        slide.addEventListener('click', () => {
+            clearActiveClasses()
+            slide.classList.add('active');
+        })
+    }
+
+    function clearActiveClasses() {
+        slides.forEach((slide) => {
+            slide.classList.remove('active');
+        })
+    }
+}
+
+slidesPlagin();
+
 console.log("Самооценка: 150/150");
 console.log("1.Вёрстка валидная +10");
-console.log("2. Вёрстка семантическая(присутствуют теги: main(+2), header(+2), nav(+2), section(+4), figure(+14), footer(+2), заголовки h1-h6. В итоге: +20");
+console.log("2. Вёрстка семантическая(присутствуют теги: main(+2), header(+2), nav(+2), section(+6), figure(+2), footer(+2), заголовки h1-h6. В итоге: +20");
 console.log("3. Для оформления СV используются css-стили +10");
 console.log("4. Контент размещается в блоке, который горизонтально центрируется на странице. Фоновый цвет тянется во всю ширину страницы +10");
 console.log("5. Вёрстка адаптивная: ни на одном из разрешений экрана до 320px включительно не появляется горизонтальная полоса прокрутки, при этом всё содержание страницы сохраняется +10");

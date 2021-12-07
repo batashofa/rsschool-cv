@@ -305,7 +305,6 @@ a:hover {
 }
 
 .left__avatar img {
-    width: 250px;
     height: 500px;
     border-radius: 100px;
     display: block;
@@ -493,7 +492,6 @@ a:hover {
     }
 
     .left__avatar img {
-        width: 250px;
         height: 500px;
         margin: 30px auto 30px auto;
     }
@@ -661,7 +659,6 @@ a:hover {
 
     .left__avatar img {
         margin: 10px auto;
-        width: 200px;
         height: 400px;
     }
 
@@ -751,7 +748,6 @@ a:hover {
 
     .left__avatar img {
         margin: 10px auto;
-        width: 200px;
         height: 400px;
     }
 

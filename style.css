@@ -13,7 +13,7 @@ body {
 .main {
     display: grid;
     margin: auto;
-    grid-template-rows: 120px 1150px 1fr 70px;
+    grid-template-rows: 120px 1335px 1fr 70px;
     grid-template-columns: 350px 1fr;
     grid-row-gap: 20px;
     max-width: 1280px;
@@ -207,6 +207,7 @@ a:hover {
 .right-project__container {
     width: 100%;
     display: flex;
+    padding: 0 20px;
 }
 
 .right-project__container-slide {
@@ -233,12 +234,15 @@ a:hover {
 }
 
 .right-project__container-slide.active {
-    flex: 10;
+    flex: 8;
 }
 
 .right-project__container-slide.active a {
     opacity: 1;
     transition: opacity 0.3s ease-in 0.4s;
+    display: inline-block;
+    width: 90%;
+    background: #9e9e9eb8;
 }
 
 
@@ -345,28 +349,22 @@ a:hover {
     color: white;
 }
 
-.html,
-.css,
-.scss,
-.bootstrap,
-.gulp {
+.green {
     width: 92%;
     background-color: #4CAF50;
 }
 
-.js,
-.react,
-.oop {
+.blue {
     width: 80%;
     background-color: #2196F3;
 }
 
-.redux {
+.red {
     width: 40%;
     background-color: #f44336;
 }
 
-.git {
+.gray {
     width: 60%;
     background-color: #808080;
 }
@@ -590,7 +588,7 @@ a:hover {
 
     .left {
         max-width: 100%;
-        grid-template-rows: 220px 500px;
+        grid-template-rows: 220px 690px;
         grid-template-columns: 0.7fr 1fr;
         grid-template-areas:
             "avatar contacts"
@@ -653,7 +651,7 @@ a:hover {
 
     .left {
         max-width: 100%;
-        grid-template-rows: 420px 220px 560px;
+        grid-template-rows: 420px 220px 715px;
         grid-template-columns: 1fr;
         grid-template-areas:
         "avatar"
